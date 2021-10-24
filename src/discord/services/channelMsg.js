@@ -1,0 +1,3 @@
+const channelMsg = () => {}
+
+export { channelMsg }
