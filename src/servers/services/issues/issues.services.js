@@ -16,6 +16,19 @@ const soartIssues = async (data) => {
     if (tags === 'mobile') {
         const channel = env.botChannels.appIssues
         await emddedMsg({ formattedMsg: formatedMsg, channelsID: channel })
+        return
+    }
+
+    if (tags === 'web') {
+        const channel = env.botChannels.webIssues
+        await emddedMsg({ formattedMsg: formatedMsg, channelsID: channel })
+        return
+    }
+
+    if (tags === 'server') {
+        const channel = env.botChannels.serverIssues
+        await emddedMsg({ formattedMsg: formatedMsg, channelsID: channel })
+        return
     }
 }
 
